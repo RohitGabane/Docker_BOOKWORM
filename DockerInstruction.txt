@@ -1,0 +1,9 @@
+1. install and set up the docker as per sir's instructions ,
+2. create a new folder paste Dockerfile and dockercompose file into the folder.
+3. Edit the docker-compose file and provide a new username and password, need not be same as exisisting user.
+4. Open sts and go to application.properties of your project and edit the mysql connection prorperties as mentioned in dockerCompose file.
+	mysqldb instead of localhost and provide the username and password you provided in the docker-compose file.
+5. right click on project run as maven build 6 and provide goals as package
+6. copy the generated jar file and paste it into the folder containing the dockerfiles
+7. change the name of the jar inside the dockerfile to match the name of your generated file.
+8. open command prompt and provide the following command : docker compose up
